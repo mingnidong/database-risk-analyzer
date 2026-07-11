@@ -1,5 +1,7 @@
 # migrate-risk
 
+[![CI](https://github.com/mingnidong/database-risk-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/mingnidong/database-risk-analyzer/actions/workflows/ci.yml)
+
 **Find dangerous database migrations before they lock production.**
 
 A Python static analyzer that finds risky PostgreSQL migrations and generates safer rollout plans.
