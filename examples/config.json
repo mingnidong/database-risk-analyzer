@@ -1,0 +1,29 @@
+{
+  "database": "postgres",
+  "tables": {
+    "users": {
+      "estimated_rows": 5000000,
+      "write_qps": 120,
+      "criticality": "high"
+    },
+    "events": {
+      "estimated_rows": 80000000,
+      "write_qps": 400,
+      "criticality": "critical"
+    },
+    "orders": {
+      "estimated_rows": 2000000,
+      "write_qps": 80,
+      "criticality": "high"
+    },
+    "invoices": {
+      "estimated_rows": 500000,
+      "write_qps": 20,
+      "criticality": "medium"
+    }
+  },
+  "settings": {
+    "large_table_row_threshold": 1000000,
+    "critical_table_row_threshold": 10000000
+  }
+}
